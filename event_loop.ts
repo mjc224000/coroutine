@@ -44,18 +44,7 @@ export function myYield( p:MyPromise  ,code:CoroutineFn,pc:number,localVar:Recor
 
 }
 
-class CoroutineTask extends Task {
-    public isDone(): boolean {
-        return true;
-    }
-    private stackStore:Record<string,any>={};
-    private pc:number = 0;
-    save(v:Record<string,any>){
-        this.stackStore = v;
-    }
-
-}
-
+ 
 
 let queue = new Array<Task>();
 

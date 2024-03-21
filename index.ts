@@ -18,7 +18,6 @@ import { mySetTimeout, MyPromise,myYield } from "./event_loop";
 }
 协程代码等价于下面这个状态机代码
 */
-
 /**
  *  b1 {i=0;}
  *  b2 { i<10;} ？ b3 : b6
